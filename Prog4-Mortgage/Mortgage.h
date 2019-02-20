@@ -1,3 +1,14 @@
 #pragma once
-// header file for Mortgage class
-
+class Mortgage
+{
+private:
+	float payment, loan, rate;
+	int years;
+public:
+	Mortgage();
+	void setLoan(float);
+	void setRate(float);
+	void setYears(int);
+	double getPayment() const;
+	double getMonthly() const;
+};
